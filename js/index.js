@@ -45,7 +45,16 @@ Vestibulum aliquam purus ut metus egestas, ut pretium augue mollis.
  function wordCounter (paragraph) {
      let words = 0;
      let howManyEts = 0;
-     let uniqueWords = paragraph.split(" ")
+     let uniqueWords = paragraph.split(" ");
+     for( let i = 0; i< uniqueWords.length; i++){
+         if(uniqueWords[i] === "et") {
+             howManyEts++;
+            
+         }
+         
+     }
+     console.log(`There are ${howManyEts} ets`);
+
 
      console.log(`There are ${uniqueWords.length} words`)
         
@@ -54,3 +63,21 @@ Vestibulum aliquam purus ut metus egestas, ut pretium augue mollis.
     
  
  wordCounter(paragraph);
+
+ //Bonus 2
+ const phraseToCheck = "race car";
+
+ function palineDromeCheck (str) {
+    let withoutSpace = str.replace(/\s/g, "")
+ let reversed = withoutSpace.split(" ").reverse().join(" ").replace(/\s/g, "")
+ console.log(reversed);
+ if(withoutSpace === reversed) {
+     console.log("This is a palinedrome")
+ } else {
+     console.log("This isn't a palinedrome")
+ }
+}
+palineDromeCheck("Amor, Roma"
+);
+
+
