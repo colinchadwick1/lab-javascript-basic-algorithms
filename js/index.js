@@ -25,3 +25,32 @@ if(lexicalOrder < 0) {
 }else {
   console.log("What?! You both have the same name?")
 }
+
+//Bonus 1
+
+const paragraph = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus lorem eu odio ultrices pulvinar. 
+Etiam ullamcorper, dui ac laoreet venenatis, quam erat blandit nunc, non volutpat erat tellus non urna. Quisque hendrerit erat tortor, vel tempus ante consequat quis. 
+Suspendisse ut nisi sit amet ligula euismod molestie. Vivamus elementum libero ipsum, nec pharetra eros feugiat sed. Fusce accumsan, velit in ornare porta, orci diam dictum nunc, a tincidunt lectus eros vel magna. Nulla eu dictum nisi, vitae dapibus nisl. Donec sed congue lacus. Nunc porta faucibus varius. 
+Aliquam tellus urna, consectetur ac lorem non, scelerisque molestie mi. Curabitur faucibus mi sed dignissim mattis. Etiam quis tortor ultricies, feugiat lorem ut, posuere augue. Maecenas venenatis vel tortor vitae congue. Praesent a risus risus. Nunc ullamcorper nunc aliquam orci pretium viverra. Aliquam erat volutpat.
+
+Suspendisse quis sem est. Proin ac fermentum tortor, porttitor feugiat enim. Pellentesque feugiat sodales elit eu luctus. Cras efficitur, ligula non sagittis finibus, neque justo elementum eros, vitae scelerisque sem lorem a ex. 
+Praesent laoreet tristique interdum. Nullam sodales eu sapien et imperdiet. Sed maximus massa non sem vulputate, eget euismod urna placerat. Curabitur non lacus eget lectus consectetur hendrerit eget eu enim. Aenean mauris mauris, pulvinar eget accumsan in, venenatis lacinia lorem. 
+Donec dapibus porta elit sit amet sollicitudin. Aenean viverra, elit in semper iaculis, dolor lorem porttitor ex, eget fringilla tellus nibh vitae risus. Etiam id laoreet libero. Phasellus vel consectetur lectus, auctor facilisis lectus. Pellentesque commodo volutpat diam, ut viverra leo rutrum in. Quisque tristique felis at erat finibus ultrices.
+Etiam lacinia ac urna ac vulputate.
+
+Donec quis eleifend tortor. Pellentesque feugiat ligula in rhoncus iaculis. Mauris at pulvinar mi. Phasellus mollis odio in porttitor dignissim. Aliquam porta vehicula velit nec vestibulum. Duis vitae eros et erat pellentesque placerat non ac risus. Suspendisse congue lacus et feugiat aliquet. Fusce in mi mauris. Donec consequat justo nec quam vestibulum varius et at quam. In in lobortis nulla, in ornare lorem. 
+Vestibulum aliquam purus ut metus egestas, ut pretium augue mollis.
+ Nunc convallis tincidunt aliquam. Nulla nulla eros, ultrices quis aliquam quis, tincidunt eu nisl.`
+
+ function wordCounter (paragraph) {
+     let words = 0;
+     let howManyEts = 0;
+     let uniqueWords = paragraph.split(" ")
+
+     console.log(`There are ${uniqueWords.length} words`)
+        
+    
+    }
+    
+ 
+ wordCounter(paragraph);
